@@ -34,9 +34,9 @@
 
   # 方式2：获取免费体验密钥
   https://gaccode.store/share
-
-  2. 配置环境
-
+  ```
+  ### 2. 配置环境
+  ```
   export ANTHROPIC_BASE_URL=https://gaccode.com/claudecode
   export ANTHROPIC_API_KEY=sk-ant-oat01-xxxxxxx
 
@@ -45,12 +45,14 @@
   jq --arg key "${ANTHROPIC_API_KEY: -20}" \
   '(. // {}) | .customApiKeyResponses.approved |= ([.[]?, $key] | unique)' > \
   ~/.claude.json.tmp && mv ~/.claude.json.tmp ~/.claude.json
-
-  3. 开始使用
-
+   ```
+  
+  ### 3. 开始使用
+  ```
   claude-code "帮我创建一个React组件"
-
-  🎯 套餐价格
+  ```
+  
+  ## 🎯 套餐价格
 
   | 套餐   | 价格   | 有效期  | 适用场景      |
   |------|------|------|-----------|
@@ -58,7 +60,7 @@
   | 月卡   | ¥279 | 30天  | 中长期开发项目   |
   | 免费体验 | 免费   | 每日更新 | 新用户体验     |
 
-  📖 技术文档
+  ## 📖 技术文档
 
   - https://gaccode.store/post/what-is-gaccode - 基础概念介绍
   - https://gaccode.store/post/claude-code-cli-install-guide - 详细安装教程
@@ -67,18 +69,11 @@
   - https://gaccode.store/post/claude-code-api-best-practices - 使用技巧
   - https://gaccode.store/post/gaccode-faq - FAQ解答
 
-  📞 联系支持
+  ## 📞 联系支持
 
   - 微信客服: jopanda_ (备注：gaccode)
   - Telegram: https://t.me/easy_claude_code
   - 官方网站: https://gaccode.store
-
-  📊 服务数据
-
-  - 👥 服务用户：10,000+ 开发者
-  - 🚀 API调用：1,000,000+ 次/月
-  - ⚡ 响应时间：< 100ms
-  - 🛡️ 服务可用性：99.9%+
 
   ---
   专业团队 · 稳定服务 · 即买即用
