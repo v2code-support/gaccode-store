@@ -1,4 +1,4 @@
-# GACCode Store - Claude Code API 兑换码购买平台
+# GACCode Store - GAC Claude Code API 兑换码购买平台
 
   <div align="center">
 
@@ -78,4 +78,4 @@
   ---
   专业团队 · 稳定服务 · 即买即用
 
-  Made with ❤️ by GACCode Team
+  Made with ❤️ by GACCode Store Team
